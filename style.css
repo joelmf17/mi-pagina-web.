@@ -1,0 +1,251 @@
+
+      /* Resetting some default styles */
+/* Elimina los márgenes, rellenos y asegura que el tamaño del cuadro se mida correctamente para todos los elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic page layout */
+/* Establece la fuente y el espaciado de línea general en el cuerpo de la página */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.6;
+}
+
+/* Header Styling */
+/* Estiliza el encabezado con un fondo y color de texto, además de un espaciado y alineación de sus elementos */
+header {
+    background-color: #c49179f5;
+    color: #000000;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo en el header */
+/* Alinea los elementos del logo (imagen y texto) en el encabezado */
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+/* Imagen del logo en el header */
+/* Define el tamaño de la imagen del logo en el encabezado */
+header .logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+/* Título en el header */
+/* Ajusta el tamaño de fuente del título en el encabezado */
+header h1 {
+    font-size: 24px;
+}
+
+/* Navegación */
+/* Quita los estilos de lista en la barra de navegación y muestra los elementos en línea */
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+/* Elementos de la lista de navegación */
+/* Agrega margen entre los elementos de la lista de navegación */
+nav ul li {
+    margin: 0 15px;
+}
+
+/* Enlaces de la navegación */
+/* Estiliza los enlaces de navegación, sin subrayado y con color blanco */
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+/* Section Styling */
+/* Establece el fondo y el relleno de las secciones principales */
+section {
+    padding: 40px;
+    background-color: #eee4e4;
+    margin-top: 20px;
+}
+
+/* Encabezados en sección */
+/* Añade margen inferior a los encabezados de las secciones */
+section h2, section h3 {
+    margin-bottom: 10px;
+}
+
+/* Estilos para botones de enlaces */
+/* Define el color de fondo, texto y los márgenes para los enlaces en formato de botones */
+.botones a {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-right: 15px;
+    border-radius: 5px;
+}
+
+/* Hover en botones */
+/* Cambia el color de fondo cuando se pasa el cursor sobre el botón */
+.botones a:hover {
+    background-color: #555;
+}
+
+/* Estilos de columnas */
+/* Establece un diseño de columnas flexibles en la sección */
+.columnas {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* Estilos para cada columna */
+/* Cada columna ocupa un espacio igual, tiene margen y sombra */
+.columna {
+    flex: 1;
+    margin: 0 10px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Media Query para dispositivos pequeños */
+/* Cambia las columnas a disposición vertical en pantallas menores a 768px */
+@media (max-width: 768px) {
+    .columnas {
+        flex-direction: column;
+    }
+    .columna {
+        margin: 10px 0;
+    }
+}
+
+/* Footer Styling */
+/* Estiliza el pie de página con fondo oscuro y alinea los elementos */
+footer {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Pie de página: sección izquierda */
+/* La sección izquierda del pie de página ocupa la mitad del ancho */
+footer .footer-left {
+    flex: 1;
+}
+
+/* Pie de página: sección derecha */
+/* La sección derecha del pie de página está alineada a la derecha */
+footer .footer-right {
+    flex: 1;
+    text-align: right;
+}
+
+/* Formulario en el footer */
+/* Alinea el formulario en el pie de página verticalmente */
+footer form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+/* Márgenes en los elementos del formulario */
+/* Añade espacio entre las etiquetas y campos de entrada */
+footer form label, footer form input, footer form textarea {
+    margin: 10px 0;
+}
+
+/* Campos de texto en el formulario */
+/* Ajusta el ancho y el relleno de los campos de entrada en el pie de página */
+footer form input, footer form textarea {
+    width: 300px;
+    padding: 10px;
+}
+
+/* Botón en el formulario */
+/* Estiliza el botón con fondo negro, color de texto y tamaño */
+footer form button {
+    background-color: #000000;
+    color: #000000;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Hover en el botón del formulario */
+/* Cambia el fondo del botón cuando el cursor pasa sobre él */
+footer form button:hover {
+    background-color: #000000;
+}
+
+/* Contenedor flexible */
+/* Alinea elementos del contenedor y da espacio entre imagen y texto */
+.contenedor {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Imagen en el contenedor */
+/* Define el tamaño de la imagen en el contenedor */
+.contenedor img {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Caja de texto en el contenedor */
+/* Establece el fondo y relleno para la caja de texto en el contenedor */
+.texto {
+    background-color: #c49179f5;
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+}
+
+/* Estilos para contenedor de imagen */
+/* Centra y da margen superior al contenedor de imagen */
+.image-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Imagen en el contenedor de imagen */
+/* Define un tamaño de ancho relativo a su contenedor */
+.image-container img {
+    width: 25%; 
+    height: auto;
+}
+
+/* Estilos de contenido principal */
+/* Añade un relleno al contenido principal */
+main {
+    padding: 20px;
+}
+
+/* Estilos de sección adicional */
+/* Añade margen, relleno y borde a la sección */
+section {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+}
+
+/* Footer final */
+/* Centra el texto y añade un fondo oscuro */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #000000;
+}
